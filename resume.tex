@@ -1,12 +1,4 @@
-%-------------------------
-% Resume in LaTeX
-% Author : Jake Gutierrez (modified for Joseph Spagnoli)
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-% Test comment for LaTeX Workshop
-%------------------------
-
-\documentclass[letterpaper,9.7pt]{article}
+\documentclass[letterpaper,10pt]{article}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{latexsym}
 \usepackage{titlesec}
@@ -67,62 +59,66 @@
 %-----------EXPERIENCE-----------
 \section{\textbf{Experience}}
 \resumeSubHeadingListStart
-  \resumeSubheading{System Administrator Intern}{May 2025 -- Present}{\textbf{IFAS $|$ University of Florida}}{}
+  \item {\textbf{Software Engineering Co-op}} \hfill {\textbf{Jan. 2026 -- Present}}\\
+    \textbf{GE Appliances $|$ Louisville, KY}
   \resumeItemListStart
-    \resumeItem{Managed technology needs for \textbf{25+ faculty}, providing technical support and leading system maintenance, imaging, and deployment to ensure seamless technology integration and reliability.}
-    \resumeItem{Provided hands-on assistance with \textbf{Active Directory}, including user account management and basic group policy tasks.}
-    \resumeItem{Delivered essential technical support by performing troubleshooting for common hardware and software issues to ensure operational uptime.}
+    \resumeItem{Incoming co-op on the \textbf{iOS Mobile Applications} team, contributing to feature development in \textbf{Swift} using the \textbf{VIPER} architecture.}
   \resumeItemListEnd
 
-
- \item {\textbf{AI Scholars Researcher}} \hfill {\textbf{Oct. 2024 -- Present}}\\
+  \item {\textbf{AI Scholars Researcher}} \hfill {\textbf{Aug. 2025 -- Present}}\\
     \textbf{M.E. Rinker, Sr. School of Construction Management $|$ University of Florida}
   \resumeItemListStart
-    \resumeItem{Developed a CTGAN synthesizer using \textbf{SDV} and \textbf{Python} to generate high-fidelity synthetic data, creating the foundational dataset for initial artificial neural network training in the absence of real-world data.}
-    \resumeItem{Investigated key physiological (5-8 features) and environmental (12-13 features) variables to enhance predictive models for heat-related illnesses in construction workers.}
-    \resumeItem{Contributed to the design of an \textbf{ANN framework} for real-time heat strain prediction, paving the way for IoT integration in wearable devices to improve workplace safety.}
+    \resumeItem{Researching an early-warning ML task to \textbf{reduce occupational noise risk} by predicting whether a construction worker will exceed \textbf{NIOSH recommended} daily noise exposure limits by shift's end, using only the first half of a worker’s shift.}
+    \resumeItem{Engineering \textbf{time-series} and \textbf{frequency-based features} and comparing \textbf{candidate models} using appropriate evaluation metrics to determine the best approach for practical safety alerts.}
   \resumeItemListEnd
-  \item {\textbf{AI Intern}} \hfill {\textbf{Jun. 2025 -- Aug. 2025}}\\
-    \textbf{Humanworks Lab $|$ NASA Johnson Space Center (JSC)}
+  \item {\textbf{System Administrator Intern}} \hfill {\textbf{May 2025 -- Present}}\\
+    \textbf{IFAS $|$ University of Florida}
   \resumeItemListStart
-    \resumeItem{Reduced manual anomaly detection time by \textbf{12 hours} by spearheading the development of an \textbf{autoencoder} using \textbf{PyTorch} to detect anomalies for ISS ARED machine sensor faults, processing over \textbf{11,000 data points} per exercise set in \textbf{large-scale time-series data}.}
-    \resumeItem{Implemented a \textbf{CI/CD pipeline} with \textbf{PyTest} and GitLab runners to ensure code quality and deployed an \textbf{end-to-end data pipeline} with \textbf{Dagster}.}
-    \resumeItem{Engineered a comprehensive dashboard using \textbf{Dash, Plotly, and SciPy}, improving data analysis efficiency by \textbf{15\%} and enhancing readability with color-coded channels and metadata-on-hover functionality.}
+    \resumeItem{Managed technology needs for \textbf{25+ faculty}, providing technical support and leading system maintenance, imaging, and deployment to ensure seamless technology integration and reliability.}
+    \resumeItem{Created a dedicated laptop OU in Active Directory and linked a custom GPO to automate biweekly maintenance, running Dell Command Update and Windows security updates every other Sunday.}
   \resumeItemListEnd
-
+   \item {\textbf{AI Engineer Intern}} \hfill {\textbf{Jun. 2025 -- Aug. 2025}}\\
+    \textbf{Amentum $|$ NASA Johnson Space Center (JSC)}
+  \resumeItemListStart
+    \resumeItem{Reduced manual anomaly detection time by \textbf{12 hours} by assisting in the development of an \textbf{autoencoder} using \textbf{PyTorch} to detect anomalies for ISS ARED machine sensor faults, processing over \textbf{11,000 data points} per exercise set in \textbf{large-scale time-series data}.}
+    \resumeItem{Engineering a comprehensive dashboard using \textbf{Dash, Plotly, and SciPy}, implemented a \textbf{CI/CD pipeline} with \textbf{PyTest} and GitLab runners to ensure code quality and deployed an \textbf{end-to-end data pipeline} with \textbf{Dagster}.}
+  \resumeItemListEnd
+  \item {\textbf{Undergraduate Research Assistant}} \hfill {\textbf{Oct. 2024 -- May 2025}}\\
+    \textbf{M.E. Rinker, Sr. School of Construction Management $|$ University of Florida}
+  \resumeItemListStart
+    \resumeItem{Developed a \textbf{CTGAN synthesizer} using \textbf{SDV} and Python to generate high-fidelity synthetic data, enabling initial \textbf{neural network training} in the absence of real-world data.}
+    \resumeItem{Identified and analyzed key \textbf{physiological (5–8)} and \textbf{environmental (12–13)} variables to inform early model development for predicting heat-related illness risk in construction settings.}
+  \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{\textbf{Projects}}
 \resumeSubHeadingListStart
+  \item{\textbf{ExperienceCurator AI $|$ Python, FastAPI, PostgreSQL, pgvector, LangChain, Docker, React/TypeScript}}\hfill\textbf{Dec. 2025 -- Present}
+  \resumeItemListStart
+  \resumeItem{Built a local-first \textbf{“career memory”} system to \textbf{ingest docs} + \textbf{codebases}, normalize content, \textbf{generate embeddings}, and serve evidence-grounded answers through a \textbf{FastAPI REST API} with \textbf{pgvector retrieval}.}
+  \resumeItem{Implemented an \textbf{agent-orchestrated RAG workflow} with evidence-backed \textbf{resume tailor} + \textbf{interview question bank}, cutting resume tailoring time \textbf{30\%} via more representative, \textbf{citation-grounded} bullet suggestions and generating concise, sourced answers to user-created interview questions.}
+  \resumeItemListEnd
+
   \item{\textbf{EvoChess $|$ Python, PyTorch, MLflow, Dagster, AWS S3, Docker, Google Cloud Run}}\hfill\textbf{Mar. 2025 -- Apr. 2025}
   \resumeItemListStart
   \resumeItem{Orchestrated an \textbf{automated MLOps pipeline} with \textbf{Dagster} to \textbf{ETL} chess game data from Lichess into an \textbf{AWS S3 bucket} for CNN model training with \textbf{PyTorch}, and deployed the final model as a containerized API using \textbf{Docker} and \textbf{Google Cloud Run}.}
-  \resumeItem{Trained a \textbf{Convolutional Neural Network} in \textbf{PyTorch} on a filtered dataset of over \textbf{80,000 2000+ elo rated games}, engineering a data processing workflow to predict optimal move sequences from any given board state.}
-  \resumeItem{Achieved a \textbf{1200 Elo rating}, resulting in a model capable of outperforming a beginner player.}
-  \resumeItemListEnd
-
-  \item{\textbf{Six Degress of Twitter $|$ C++ / Crow \& React}}\hfill\textbf{Mar. 2025 -- Apr. 2025}
-  \resumeItemListStart
-    \resumeItem{Designed and implemented a C++ \textbf{adjacency list} and traversal system using \textbf{BFS} and \textbf{A*} algorithms to explore six degrees of separation in a large-scale social network graph of \textbf{100,000 nodes}.}
-    \resumeItem{Built a Crow-based HTTP server to return JSON responses for graph metrics and pathfinding queries.}
-    \resumeItem{Collaborated on integration with a React/TypeScript frontend that visualizes connections through an interactive, force-directed graph interface.}
+  \resumeItem{Trained a \textbf{Convolutional Neural Network} in \textbf{PyTorch} on a filtered dataset of over \textbf{9,000,000 2000+ elo rated games}, engineering a data processing workflow to predict optimal move sequences from any given board state.}
   \resumeItemListEnd
 
   \item{\textbf{Data-Driven Resource Optimization $|$ Python, Matplotlib, Scikit-learn}}\hfill\textbf{Jul. 2024 -- Aug. 2024}
   \resumeItemListStart
-    \resumeItem{Developed a custom gradient descent algorithm to minimize the errors squared cost function for predicting event resource needs.}
-    \resumeItem{Visualized cost function progression using \textbf{Matplotlib} and validated model performance, achieving an \textbf{R² score} of \textbf{0.958} with \textbf{Scikit-learn}.}
-    \resumeItem{Integrated model forecasts into event logistics, driving a \textbf{20\%} reduction in resource costs and an \textbf{85\%} decrease in waste.}
+    \resumeItem{Developed a \textbf{gradient descent} algorithm to \textbf{minimize} the \textbf{Mean Squared Error (MSE)} for predicting event resource needs}
+    \resumeItem{Visualized cost function progression using \textbf{Matplotlib} and validated model performance, achieved a \textbf{R² score} of \textbf{0.958} with \textbf{Scikit-learn}, reduced costs by 20\% and an \textbf{85\%} decrease in waste.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------SKILLS AND ACHIEVEMENTS-----------
 \section{\textbf{Skills and Achievements}}
 \resumeSubHeadingListStart
-  \item{\textbf{Languages}: Python, C++, R, Java, SQL, JavaScript, TypeScript \textbf{Tools}: Jupyter Labs, PowerBI, MySQL, VS Code}
-  \item{\textbf{Cloud \& DevOps}: AWS (S3), Google Cloud Platform (Cloud Run), Dagster, Docker, CI/CD, Git, Linux}
-  \item{\textbf{Libraries/Frameworks}: Scikit-learn, PyTorch, Pandas, NumPy, SciPy, Matplotlib, Seaborn, TensorFlow, SDV, React, Dash, Plotly, Statsmodels, Express.js, Node.js}
+  \item{\textbf{Languages}: Python, C++, R, Java, SQL, JavaScript, TypeScript \textbf{Databases}: PostgreSQL (pgvector), MongoDB, InfluxDB, MySQL}
+  \item{\textbf{Cloud \& DevOps}: AWS (S3), Google Cloud Platform (Cloud Run), Linux, Dagster, Docker, Grafana, CI/CD, Git}
+  \item{\textbf{Libraries/Frameworks}: Scikit-learn, PyTorch, Pandas, LangChain, SQLAlchemy, Alembic, SDV, React, Dash, Plotly}
   \item{\textbf{Awards}: Amentum Intern Scholarship (2025), AI Scholar (2025), UF President's Honor Roll (2024--Present), Machen Florida Opportunity Scholar (2023)}
   
 \resumeSubHeadingListEnd
